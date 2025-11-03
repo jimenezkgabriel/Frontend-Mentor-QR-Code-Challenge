@@ -1,11 +1,9 @@
-1. How did using Figma designs as references affect your coding process?
+1. What challenges did you face when refactoring your code to use Bootstrap?
+   The challenge about refactoring old code into Bootstrap for this lab was just getting started with Bootstrap and spending the first few hours reading the documentation and looking up tutorials on how to get started. Other challenges include downloading the Bootstrap .css file and setting that up, looking into scss and trying to give custom
+   colors, figuring out how to get GitHub Pages to work properly with Bootstrap CSS.
 
-I was able to inspect the exact color values, the exact width, the exact border radius number, and even exact padding size using Figma and inspecting the content.
+3. How did using Bootstrap utility classes and components simplify your styling process?
+   A lot of padding and margin stuff got standardized across every element and class so spacing is super neat and super clean. There's a component class for a lot of things that I needed, including a card component. There are built in flexbox displays and the whole grid system simplifies web layout.
 
-2. What challenges did you encounter when aligning your code with the design specifications?
-
-I wanted to have my content centered on the screen without the use of a flexbox or grid. Luckily, a simple margin: auto; fixed that. Oh, and there was an issue in keeping the QR image within the bounds of the card but I managed to solve it (googling it).
-
-3. How can the feedback and community resources on Frontend Mentor help you improve as a developer?
-
-What always comes to mind when reviewing new solutions is "How can I do this alignment or CSS trick simpler or more elegant? Less code?" That's how reviewing new solutions help you discover new and easier ways to do the same things.
+4. In what scenarios might you choose not to use Bootstrap and write custom CSS instead?
+   I guess if a browser doesn't support Bootstrap somehow.
