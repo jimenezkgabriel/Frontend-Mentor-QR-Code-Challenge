@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -14,29 +14,50 @@
   <title>Frontend Mentor | QR code component</title>
 </head>
 
-<body>
-  <main>
-    <!--The container-->
-    <section class="flex-card">
-      <!--Carrying the QR code-->
-      <figure>
-        <img src="./images/image-qr-code.png" alt="A QR Code.">
-      </figure>
-      <!--Carrying the two text-->
-      <summary class="flex-text">
-        <p class="text-1">
-          Improve your front-end skills by building projects
-        </p>
-        <p class="text-2">
-          Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-        </p>
-      </summary>
-    </section>
-  </main>
+<body style="background-color: hsl(212, 45%, 89%);">
+  <!--Small customized adjustments-->
+  <style>
+    p {
+      font-family: outfit;
+    }
+
+    .text-1 {
+      color: hsl(218, 44%, 22%);
+    }
+
+    .text-2 {
+      color: hsl(216, 15%, 48%);
+    }
+  </style>
+  <!--Viewport-->
+  <div class="container vh-100 align-content-center text-center">
+    <div class="row">
+      <div class="col">
+        <!--The card-->
+        <div class="card border-0 mx-auto"
+          style="max-width: 20rem; padding: 1rem 1rem 2.5rem 1rem; border-radius: 20px;">
+          <!--Carrying the QR code-->
+          <div>
+            <img src="./images/image-qr-code.png" class="card-img" style="border-radius: 10px;" alt="A QR Code.">
+          </div>
+          <!--Carrying the two text-->
+          <div class="card-body pt-4 pb-0">
+            <p class="card-text fw-bold fs-5 text-1">
+              Improve your front-end skills by building projects
+            </p>
+            <p class="card-text fw-normal text-2">
+              Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 <footer>
-  <div style="text-align: center; font-family: var(--font-outfit);">
+  <div style="font-family: outfit;">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Gabriel Jimenez</a>.
   </div>
